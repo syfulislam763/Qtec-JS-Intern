@@ -1,0 +1,68 @@
+/*------- responsive css ----- */
+
+
+
+@media (min-width: 1199.98px) {
+    .d-none{
+        display: block;
+    }
+}
+
+/* LG-Large Device Container:960px (Desktop) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .products-container{
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .d-none{
+        display: block;
+    }
+}
+
+/* MD-Medium Device Container:720px (Tablet) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .products-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .toggle-card{
+        display: block;
+    }
+}
+ 
+/* SM-Small Device Container:540px (Landscape Phone) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+   .products-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .toggle-card{
+        display: block;
+    }
+}
+
+/* XS-Extra Small Device (Portrait Phone) */
+@media (max-width: 575.98px) {
+    .products-container{
+        grid-template-columns: 1fr;
+    }
+    .toggle-card{
+        display: block;
+    }
+ 
+    .value p{
+        font-size: 3vw;
+    }
+    .label p{
+        font-size: 3vw;
+    }
+    .order-card p{
+        font-size: 3vw;
+    }
+    .pay-button p{
+        font-size: 3vw;
+    }
+}
+
+
+
+
+    

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qtec/JS/Intern/OCT 2021</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <!-- main container -->
+    <div class="container">
+
+        <!-- main section -->
+        <div class="main-section">
+
+            <div class="wrapper">
+                <div class="search-field">
+                    <!-- search input -->
+                    <input id="search-field" placeholder="Search Products ..." type="search"/>
+                    <!-- message element -->
+                    <h3 id="notFound"></h3>
+
+                    <!-- products container -->
+                    <div class="products-container">
+                        <!-- all products is shown here -->
+                    </div>
+                </div>
+                <!-- toggle button -->
+                <img id="arrow" class="toggle-card" height="30px" width="30px" src="/icons/next.png"/>
+            </div>
+
+        </div>
+
+
+
+        <!-- card section -->
+        <div id="card-section" class="card-section">
+
+            <!-- card wrapper -->
+            <div class="card-container">
+
+                <!-- card header -->
+                <div class="card-header">
+                    <img height="30px" width="30px" src="./icons/shopping-cart.png"/>
+                    <h3>Add Order</h3>
+                </div>
+
+                <!-- orders container -->
+                <div class="orders-container">
+
+                    <!-- all orders is shown here -->
+                    <div class="order-card">
+                        <div class="order-thumb">
+                            <img height="35px" width="35px" src="./icons//shop.png"/>
+                            <span class="quantity">x</span>
+                        </div>
+                        
+                        <p>Title</p>
+                        <p>Price</p>
+                        <img height="25px" width="25px" src="./icons/delete.png"/>
+                    </div>
+
+                </div>
+
+                <!-- expense calculation section -->
+                <div class="calculation-section">
+                    <div class="calculation">
+                        <div class="label">
+                            <p><strong>Discount</strong></p>
+                            <p><strong>Subtotal</strong></p>
+                            <p><strong>Shipping Charge</strong></p>
+                            <p><strong>Total</strong></p>
+                        </div>
+                        <div class="value">
+                            <p><span id="discount">0.00</span> BDT</p>
+                            <p><span id="subtotal">0.00</span> BDT</p>
+                            <p><span id="shipping">0.00</span> BDT</p>
+                            <p><span id="total">0.00</span> BDT</p>
+                        </div>
+                    </div>
+                    <div onclick="alert('thanks :)')" class="pay-button">
+                        <p>PAY</p>
+                        <p><span id="pay">0.00</span> BDT</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
