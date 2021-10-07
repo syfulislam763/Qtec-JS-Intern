@@ -1,1 +1,1 @@
-## (LIVE LINK)[https://syfulislam763.github.io/Qtec-JS-Intern/]
+## [LIVE LINK](https://syfulislam763.github.io/Qtec-JS-Intern/)
